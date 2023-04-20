@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <!-- font awesome links -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d1b29e8e1a.js" crossorigin="anonymous"></script>
+</head>
+<!-- CSS Internal Styling -->
+<!-- Please give yor pages enough top-margin cauuse nav position is fixed -->
+
+
+
+<nav>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="../ASSETS/header-logo1.svg" alt="">
+            <div id="burger">
+                <h2><i class="fa-solid fa-bars"></i></h2>
+            </div>
+        </div>
+        <div id="links" class="dropdown">
+            <ul class="navbar-nav">
+                <li><a href="#" class="links active"><span class="none"><i class="fa-solid fa-house"></i></span>Home</a></li>
+                <li><a href="#" class="links"><span class="none"><i class="fa-regular fa-file"></i></span>About</a></li>
+                <li><a href="#" class="links"><span class="none"><i class="fa-regular fa-circle-question"></i></span>FAQ</a></li>
+                <li class="none"><a href="#" class="links"><span class="none"><i class="fa-regular fa-user"></i></span>Account</a></li>
+                <li><a href="#" class="links"><span class="none"><i class="fa-regular fa-envelope"></i></span>Contact</a></li>
+                <li class="none"><a href="#" class="links"><span class="none"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>Log out</a></li>
+
+            </ul>
+        </div>
+
+        
+        <div id="flex" class="dropdown">
+            <form>
+                <input type="search" name="" id="search" placeholder='Search' value='' onchange="openPage()">
+            </form>
+            <ul>
+                <li><a href="#"><i class="fa-regular fa-bell" style="color: rgb(59, 91, 177);"></i></a></li>
+                <!-- profile -->
+                <li><a href="profile_screen.html" class="profile">
+                        <!--profile-img added here -->
+                        <span class="bubble"><!--message no here -->8</span>
+                    </a></li>
+                <!-- <i class="fa-solid fa-user"></i> -->
+            </ul>
+
+        </div>
+        
+    </div>
+</nav>
+<!-- JavaScript -->
+<script src="../JAVASCRIPT/nav.js"></script>
+
+
